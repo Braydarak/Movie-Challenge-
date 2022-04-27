@@ -1,0 +1,18 @@
+@import "../scss/index.scss";
+
+.spinner {
+    display: flex;
+    justify-content: center;
+}
+
+.spinner__icon {
+    animation: spinner 1s infinite linear;
+    color: white;
+
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}

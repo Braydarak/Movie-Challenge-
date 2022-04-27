@@ -1,0 +1,55 @@
+@import "../scss/index.scss";
+
+.movie__card{
+    list-style: none;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    border-width: thin;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.movie__card:hover{
+    opacity: 0.8;
+}
+
+.movie__image {
+    border-radius: 5px;
+    background-color: #404056;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.movie__vote {
+    position: relative;
+    top: -3vh;
+    left: 7vh;
+}
+
+.movie__vote{
+    text-decoration: none;
+}
+
+@media (max-width: 510px) {
+    .movie__card {
+        font-size: 80%;
+    }
+
+    .movie__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .movie__vote {
+        top: -3vh;
+        left: 8vh;
+    }
+}

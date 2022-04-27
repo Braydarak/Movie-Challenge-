@@ -1,0 +1,15 @@
+@import "../scss/index.scss";
+
+.movies__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 11px;
+    padding: 12px;
+    justify-content: center;
+}
+
+@media (max-width: 510px) {
+    .movies__grid {
+        grid-template-columns: 50% 50%;
+    }
+}

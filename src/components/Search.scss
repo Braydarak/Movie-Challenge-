@@ -1,0 +1,38 @@
+@import "../scss/index.scss";
+
+.search__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5vh;
+}
+
+.search__input {
+    width: 375px;
+    height: 40px;
+    left: 0px;
+    top: 44px;
+    color: white;
+    font-size: 20px;
+    padding: 2vh;
+
+    background: #191926;
+    border: 1px solid #C7C7E7;
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+.search__button {
+    position: rigth;
+    cursor: pointer;
+    
+    border: none;
+    background: none;
+    color: white;
+
+}
+
+@media (max-width: 510px) {
+    .search__input {
+        width: 90%;
+    }
+}
