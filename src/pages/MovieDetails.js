@@ -11,7 +11,7 @@ export function MovieDetails() {
 
   useEffect(() => {
     setIsLoading(true);
-    get("/movie/" + movieId).then((data) => {
+    get("/movie/" + movieId).then(data => {
       setIsLoading(false);
       setMovie(data);
     });
@@ -27,7 +27,7 @@ export function MovieDetails() {
 
   if (!movie) {
     return null;
-  };
+  }
 
   const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
   return (
@@ -37,10 +37,14 @@ export function MovieDetails() {
         <p className="details__title">
           <strong>{movie.title}</strong>
         </p>
-        <p><strong className="details__strong">Description</strong></p>
-        <p className="details__description">
-          {movie.overview}
+        <p className="details__genres">
+          {movie.genres.map(genre => genre.name).join(", ")}
         </p>
+        <p className="details__date">{movie.release_date}</p>
+        <p>
+          <strong className="details__strong">Storyline</strong>
+        </p>
+        <p className="details__description">{movie.overview}</p>
       </div>
     </div>
   );
