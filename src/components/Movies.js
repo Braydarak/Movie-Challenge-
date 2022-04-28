@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { get } from "../utils/HttpClient";
 import { MovieCard } from "./MovieCard";
 import "./Movies.scss";
