@@ -26,7 +26,7 @@
     position: relative;
     top: 7px;
     left: -6px;
-    font-size: 2vh;
+    font-size: 3vh;
     color: white;
     position: left;
 }
@@ -38,10 +38,10 @@
 .search__button {
     position: rigth;
     cursor: pointer;
-    
     border: none;
     background: none;
     color: white;
+    font-size: 2vh;
 }
 
 .search__button:hover {

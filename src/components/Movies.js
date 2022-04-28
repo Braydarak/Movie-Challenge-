@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { get } from "../utils/HttpClient";
 import { MovieCard } from "./MovieCard";
 import "./Movies.scss";
@@ -7,7 +7,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 export function Movies({ search }) {
   const [movies, setMovies] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [ , setIsLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
 
@@ -28,7 +28,7 @@ export function Movies({ search }) {
       dataLength={movies.length}
       hasMore={hasMore}
       next={() => setPage(prevPage => prevPage + 1)}
-      loader={<Spinner />}
+      loader={<Suspense fallback={<Spinner />}> </Suspense>}
     >
       <ul className="movies__grid">
         {movies.map(movie => (
