@@ -4,7 +4,7 @@ import "./MovieCard.scss";
 export function MovieCard({ movie }) {
   const imageUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
   return (
-    <li className="movie__card" onClick={() => (window.location.href = `/movies/${movie.id}`)}>
+    <li className="movie__card " onClick={() => (window.location.href = `/movies/${movie.id}`)}>
       <Link to={"/movies/" + movie.id}>
         <img
           width={166}
