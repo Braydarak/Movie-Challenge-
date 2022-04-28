@@ -28,7 +28,7 @@ export function Movies({ search }) {
       dataLength={movies.length}
       hasMore={hasMore}
       next={() => setPage(prevPage => prevPage + 1)}
-      loader={<Suspense fallback={<Spinner />}> </Suspense>}
+      loader={<Spinner />}
     >
       <ul className="movies__grid">
         {movies.map(movie => (
