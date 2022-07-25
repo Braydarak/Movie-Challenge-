@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Movie-Challenge-/static/css/main.0674952c.css",
+    "main.js": "/Movie-Challenge-/static/js/main.39b457bf.js",
+    "index.html": "/Movie-Challenge-/index.html",
+    "main.0674952c.css.map": "/Movie-Challenge-/static/css/main.0674952c.css.map",
+    "main.39b457bf.js.map": "/Movie-Challenge-/static/js/main.39b457bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0674952c.css",
+    "static/js/main.39b457bf.js"
+  ]
+}
